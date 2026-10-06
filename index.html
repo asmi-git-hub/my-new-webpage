@@ -1,13 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CI/CD Cloud Demo</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>CI/CD Pipeline Demo</h1>
+    <!-- Navigation Bar -->
+    <nav>
 
-    <p>Hello! This website is deployed using a CI/CD pipeline.</p>
+        <div class="logo">
+            ☁️ CI/CD Cloud
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#pipeline">Pipeline</a>
+
+            <a href="#features">Features</a>
+
+            <button id="themeBtn">🌙</button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="badge">
+            🚀 AUTOMATED CI/CD PIPELINE
+        </div>
+
+        <h1>
+            Build. Test. <span>Deploy.</span>
+        </h1>
+
+        <p>
+            A modern CI/CD cloud project using
+            HTML, CSS, JavaScript and GitHub Actions.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#pipeline" class="btn primary">
+                View Pipeline
+            </a>
+
+            <button
+                class="btn secondary"
+                onclick="showMessage()">
+                Run Demo
+            </button>
+
+        </div>
+
+        <!-- JavaScript message -->
+        <div id="message"></div>
+
+    </section>
+
+
+    <!-- CI/CD Pipeline Section -->
+    <section class="section" id="pipeline">
+
+        <h2>⚙️ CI/CD Pipeline</h2>
+
+        <p class="section-text">
+            See how code moves from development to deployment.
+        </p>
+
+        <div class="pipeline">
+
+
+            <!-- Step 1 -->
+            <div class="step">
+
+                <div class="icon">
+                    💻
+                </div>
+
+                <h3>
+                    Code
+                </h3>
+
+                <p>
+                    Write your code
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="step">
+
+                <div class="icon">
+                    📤
+                </div>
+
+                <h3>
+                    Push
+                </h3>
+
+                <p>
+                    Push code to GitHub
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="step">
+
+                <div class="icon">
+                    🧪
+                </div>
+
+                <h3>
+                    Test
+                </h3>
+
+                <p>
+                    Run automated tests
+                </p>
+
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="step">
+
+                <div class="icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Deploy
+                </h3>
+
+                <p>
+                    Website goes live
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technologies Section -->
+    <section class="section" id="features">
+
+        <h2>
+            ✨ Technologies Used
+        </h2>
+
+        <p class="section-text">
+            Technologies used to build this CI/CD project.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- HTML -->
+            <div class="card">
+
+                <div class="card-icon">
+                    🌐
+                </div>
+
+                <h3>
+                    HTML
+                </h3>
+
+                <p>
+                    Creates the structure and content
+                    of the webpage.
+                </p>
+
+            </div>
+
+
+            <!-- CSS -->
+            <div class="card">
+
+                <div class="card-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+                    Provides styling, layout,
+                    animations and responsive design.
+                </p>
+
+            </div>
+
+
+            <!-- JavaScript -->
+            <div class="card">
+
+                <div class="card-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Adds interaction and dynamic
+                    functionality to the webpage.
+                </p>
+
+            </div>
+
+
+            <!-- GitHub Actions -->
+            <div class="card">
+
+                <div class="card-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    GitHub Actions
+                </h3>
+
+                <p>
+                    Automatically tests and deploys
+                    the project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deployment Status -->
+    <section class="status-section">
+
+        <div class="status-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Deployment Successful
+            </h2>
+
+            <p>
+                Your CI/CD pipeline is working successfully!
+            </p>
+
+            <div class="status">
+
+                <span class="dot"></span>
+
+                All Systems Operational
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CI/CD Cloud Demo
+        </p>
+
+        <p>
+            Built with HTML • CSS • JavaScript • GitHub Actions
+        </p>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
